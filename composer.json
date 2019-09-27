@@ -8,9 +8,6 @@
   "autoload": {
     "psr-0": {
       "HelloWorld": "src/"
-    },
-    "classname": {
-      "PHP_Timer": "src/"
     }
   }
 }

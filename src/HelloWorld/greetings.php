@@ -2,14 +2,14 @@
 
 namespace HelloWorld;
 
-use PHP_Timer;
+use SebastianBergmann\Timer\Timer;
 
 class Greetings
 {
 	public static function sayHelloWorld()
 	{
-		$timer = new PHP_Timer();
-		$timer . start();
+		$timer = new Timer();
+		$timer::start();
 		return 'Hello World\n' . $timer->resourceUsage() . "\n";
 	}
 }
