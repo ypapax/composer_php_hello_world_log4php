@@ -3,7 +3,8 @@
   "minimum-stability": "dev",
   "require": {
     "php": ">= 7.2",
-    "phpunit/php-timer": "^2.1@dev"
+    "phpunit/php-timer": "^2.1@dev",
+    "apache/log4php": "dev-master"
   },
   "autoload": {
     "psr-0": {

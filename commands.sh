@@ -18,4 +18,8 @@ test() {
   php tests/test.php
 }
 
+addlog4php() {
+  composer require apache/log4php
+}
+
 "$@"
