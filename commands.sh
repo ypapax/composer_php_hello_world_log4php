@@ -14,4 +14,8 @@ addTimerDep() {
   composer require phpunit/php-timer
 }
 
+test() {
+  php tests/test.php
+}
+
 "$@"
