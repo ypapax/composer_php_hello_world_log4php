@@ -7,6 +7,7 @@ use Logger;
 use LoggerConfigurator;
 use LoggerHierarchy;
 use LoggerAppenderConsole;
+use LoggerLayoutPattern;
 
 class Greetings
 {
@@ -29,16 +30,25 @@ class AppLogConfigurator implements LoggerConfigurator
 
 	{
 
-		$consoleAppender = new LoggerAppenderConsole(); // create a new console appender
+// Note that %n inserts a newline.
+
+		$layout = new LoggerLayoutPattern();
+
+		$layout->setConversionPattern("%date{Y-m-d h:i:s} - %file:%line - %msg%n");
+
+		$layout->activateOptions();
 
 
-		$consoleAppender->activateOptions(); // activate the appender
+		$consoleAppender = new LoggerAppenderConsole();
+
+		$consoleAppender->setLayout($layout);
+
+		$consoleAppender->activateOptions();
 
 
-		$rootLogger = $hierarchy->getRootLogger(); // holds multiple loggers if needed
+		$rootLogger = $hierarchy->getRootLogger();
 
-		$rootLogger->addAppender($consoleAppender); // add our appenders
-
+		$rootLogger->addAppender($consoleAppender);
 
 	}
 
