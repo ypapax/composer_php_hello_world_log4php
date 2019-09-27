@@ -10,4 +10,8 @@ install() {
   composer install
 }
 
+addTimerDep() {
+  composer require phpunit/php-timer
+}
+
 "$@"
