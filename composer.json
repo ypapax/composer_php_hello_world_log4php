@@ -3,13 +3,13 @@
   "minimum-stability": "dev",
   "require": {
     "php": ">= 7.2",
-    "phpunit/php-timer": "^2.1@dev",
     "apache/log4php": "dev-master"
   },
   "autoload": {
     "psr-4": {
       "HelloWorld\\": "src/LineLogger/",
-      "LineLogger\\": "src/LineLogger/"
+      "LineLogger\\": "src/LineLogger/",
+      "Folder2\\": "src/Folder2/"
     }
   }
 }
