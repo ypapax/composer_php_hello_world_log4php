@@ -9,7 +9,8 @@
     "psr-4": {
       "HelloWorld\\": "src/LineLogger/",
       "LineLogger\\": "src/LineLogger/",
-      "Folder2\\": "src/Folder2/"
+      "Folder2\\": "src/Folder2/",
+      "Folder3\\": "src/Folder3/"
     }
   }
 }

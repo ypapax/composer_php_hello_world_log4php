@@ -1,14 +1,14 @@
 <?php
 
-namespace Folder2;
+namespace Folder3;
 
 use LineLogger\Log;
 
-class Class2
+class Class3
 {
 	public static function do()
 	{
 		$log = Log::init();
-		$log->info("hello");
+		$log->info("yo");
 	}
 }
