@@ -1,24 +1,20 @@
 <?php
 
-namespace HelloWorld;
+namespace LineLogger;
 
-use SebastianBergmann\Timer\Timer;
 use Logger;
 use LoggerConfigurator;
 use LoggerHierarchy;
 use LoggerAppenderConsole;
 use LoggerLayoutPattern;
 
-class Greetings
+class Log
 {
-	public static function sayHelloWorld()
+	public static function init()
 	{
 		Logger::configure([], new AppLogConfigurator); // use the specified configuration
 		$log = Logger::getLogger("general");
-		$log->info("Yay! Works!");
-		$timer = new Timer();
-		$timer::start();
-		return 'Hello World\n' . $timer->resourceUsage() . "\n";
+		return $log;
 	}
 }
 

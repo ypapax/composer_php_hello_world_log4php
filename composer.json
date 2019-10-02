@@ -7,8 +7,9 @@
     "apache/log4php": "dev-master"
   },
   "autoload": {
-    "psr-0": {
-      "HelloWorld": "src/"
+    "psr-4": {
+      "HelloWorld\\": "src/LineLogger/",
+      "LineLogger\\": "src/LineLogger/"
     }
   }
 }

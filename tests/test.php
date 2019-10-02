@@ -3,6 +3,8 @@
 // Autoload files using Composer autoloader.
 require_once __DIR__ . '/../vendor/autoload.php';
 
-use HelloWorld\Greetings;
+use LineLogger\Log;
 
-echo Greetings::sayHelloWorld();
+
+$log = Log::init();
+$log->info("hey");
